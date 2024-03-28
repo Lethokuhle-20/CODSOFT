@@ -6,6 +6,120 @@
     <title>Lethokuhle Nhlengethwa | Software Engineering Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+      /* CSS styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
+        line-height: 1.6;
+        font-size: 16px; /* Increased font size */
+    }
+    a {
+        text-decoration: none;
+        color: #6633ff;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+    .header {
+        background-color: #242e47;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(165, 158, 202, 0.3);
+    }
+    .header h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    /* Navigation */
+    .nav {
+        background-color: #435278; /* Dark background color */
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    .nav ul li a {
+        color: #fff; /* White text color */
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s; /* Smooth color transition */
+    }
+
+    .nav ul li a:hover {
+        color: #6633ff; /* Purple link color on hover */
+    }
+
+    /* Main Sections */
+    .section {
+        padding: 40px;
+        margin: 20px;
+        border-radius: 20px; /* Rounded corners */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Soft box shadow for depth */
+        background-color: #fff; /* White background color */
+    }
+
+    /* Home Section */
+    .home-section {
+        background: linear-gradient(to right, #434343, #5973a7); /* Initial gradient background */
+        color: #fff; /* White text color */
+        text-align: center;
+        padding: 120px 20px; /* Increased padding */
+        border-radius: 20px; /* Rounded corners */
+        position: relative;
+        animation: changeGradient 10s infinite; /* Animation for changing gradient */
+    }
+
+    @keyframes changeGradient {
+        0% { background: linear-gradient(to right, #434343, #5973a7); }
+        50% { background: linear-gradient(to right, #5973a7, #434343); }
+        100% { background: linear-gradient(to right, #434343, #5973a7); }
+    }
+
+    .home-section h1 {
+        font-size: 30px; /* Increased font size */
+        margin-bottom: 20px; /* Adjusted margin */
+    }
+
+    .home-section p {
+        font-size: 10px; /* Increased font size */
+        margin-bottom: 40px; /* Adjusted margin */
+    }
+     /* Footer */
+    .footer {
+            background-color: #525b6e; /* Dark gray background color */
+            color: #fff; /* White text color */
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    .footer p {
+            margin-bottom: 0;
+        }
+
+    </style>
 </head>
 <body>
 <header class="header">
@@ -14,15 +128,35 @@
 
 <nav class="nav">
     <ul>
-        <li><a href="#home" class="animated-icon"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="#about" class="animated-icon"><i class="fas fa-user"></i> About</a></li>
-        <li><a href="#skills" class="animated-icon"><i class="fas fa-code"></i> Skills</a></li>
-        <li><a href="#projects" class="animated-icon"><i class="fas fa-project-diagram"></i> Projects</a></li>
-        <li><a href="#resume" class="animated-icon"><i class="fas fa-file"></i> Resume</a></li>
-        <li><a href="#contact" class="animated-icon"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
     </ul>
 </nav>
 
+<section id="home" class="home-section">
+    <h1>Lethokuhle Nhlengethwa</h1>
+    <p>Software Engineer | App Developer | Full Stack Developer.</p>
+</section>
+
+<footer class="footer">
+    <p>&copy; Lethokuhle Nhlengethwa Software Engineer </p>
+</footer>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 </body>
 </html>
+
 

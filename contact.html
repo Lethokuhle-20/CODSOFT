@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lethokuhle Nhlengethwa | Get In Touch</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: #6633ff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .header {
+            background-color: #242e47;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(165, 158, 202, 0.3);
+        }
+        .header h1 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        /* Navigation */
+        .nav {
+            background-color: #435278; /* Dark background color */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .nav ul li a {
+            color: #fff; /* White text color */
+            font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s; /* Smooth color transition */
+        }
+
+        .nav ul li a:hover {
+            color: #6633ff; /* Purple link color on hover */
+        }
+        /* Contact Section */
+        .contact-section {
+            background-color: #344265; /* Dark background color */
+            padding: 40px 20px;
+            margin: 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .contact-section p {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #525b6e; /* Dark gray background color */
+            color: #fff; /* White text color */
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer p {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+<nav class="nav">
+    <ul>
+        <li><a href="index.html" class="animated-icon"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="about.html" class="animated-icon"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="skills.html" class="animated-icon"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="projects.html" class="animated-icon"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="contact.html" class="animated-icon"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+</nav>
+
+
+<section id="contact" class="contact-section section">
+    <h2 class="section-title">Get in Touch</h2>
+    <p>Email: lethokuhlenhlengethwa516@gmail.com</p>
+    <p>Github: <a href="https://github.com/Lethokuhle-20/Lethokuhle-20.git">lethokuhle-20</a></p>
+    <p>Linkedin: <a href="https:/www.linkedin.com/in/lethokuhle-nhlengethwa-a9039020b/">lethokuhlenhlengethwa</a></p>
+</section>
+
+<footer class="footer">
+    <p>&copy; Lethokuhle Nhlengethwa Software Engineer </p>
+</footer>
+
+<script>
+    // Smooth scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>
